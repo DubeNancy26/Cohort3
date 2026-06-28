@@ -1,0 +1,183 @@
+@font-face {
+    font-family: "abc";
+    src: url("Alkia.ttf");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    position: relative;
+    background: url("japan desktop wallpaper.jpg") no-repeat center center;
+    background-size: cover;
+    
+}
+
+body::before{
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: url("japan desktop wallpaper.jpg") center/cover no-repeat;
+    filter: blur(6px);
+    transform: scale(1.1);
+    z-index: -1;
+}
+
+.nav{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    
+}
+
+.image{
+    height: 60px;
+    width: auto;
+}
+
+.nav a{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+}
+
+.logo{
+    display: flex;
+    gap: 15px;
+}
+
+.logo img{
+    height: 35px;
+    width: 35px;
+}
+
+main{
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: white;
+    text-align: center;
+}
+
+main h1{
+    font-family: "abc";
+    font-size: 120px;
+    line-height: 1;
+    z-index: 1;
+    word-spacing: 60px;
+}
+
+.hero-img{
+    position: absolute;
+    height: 420px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -45%);
+    z-index: 2;
+}
+
+.tagline{
+    font-size: 22px;
+    margin-right: 500px;
+    margin-bottom: 10px;
+    z-index: 3;
+}
+
+.subtitle{
+    font-size: 22px;
+    margin-left: 500px;
+    margin-top: 10px;
+    z-index: 3;
+}
+button{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    padding: 15px 60px;
+    background: #f7d76c;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    z-index: 5;
+}
+.vision{
+    position: relative;
+    margin-top: -80px;
+    background: #2d2733;
+    color: white;
+    padding: 140px 120px 80px;
+    overflow: hidden;
+}
+
+.vision::before{
+    content: "";
+    position: absolute;
+    width: 140%;
+    height: 220px;
+    background: #2d2733;
+
+    left: 50%;
+    top: -170px;
+    transform: translateX(-50%);
+
+    border-radius: 0 0 50% 50%;
+}
+.vision h2{
+    text-align: center;
+    font-family: "abc";
+    font-size: 45px;
+    margin-bottom: 25px;
+}
+
+.divider{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.divider span{
+    width: 350px;
+    height: 1px;
+    background: #b8a99c;
+}
+
+.diamond{
+    width: 12px;
+    height: 12px;
+    border: 2px solid #d9b58c;
+    background: #2d2733;
+    transform: rotate(45deg);
+    margin: 0 15px;
+}
+
+.vision-content{
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+    margin-top: 40px;
+}
+
+.vision-content p{
+    width: 420px;
+    color: #d8d3dc;
+    line-height: 1.8;
+    font-size: 15px;
+}
