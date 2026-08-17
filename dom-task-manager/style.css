@@ -1,0 +1,154 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto; 
+}
+
+
+body.dark {
+    background-color: #222;
+    color: #fff;
+}
+
+body.dark #taskForm, 
+body.dark .taskContainer > div {
+    background-color: #333;
+    border-color: #555;
+}
+
+body.dark input, 
+body.dark select {
+    background-color: #444;
+    color: #fff;
+    border: 1px solid #666;
+}
+
+
+h1 {
+    margin: 20px 0 10px;
+    font-size: 24px;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 5px;
+}
+
+#themeToggle {
+    padding: 10px 15px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+body.dark #themeToggle {
+    background-color: #ddd;
+    color: #000;
+}
+
+
+#grandparent, #Parent {
+    padding: 20px;
+    margin: 15px 0;
+    border: 2px solid #333;
+    background-color: #fff;
+    text-align: center;
+}
+
+body.dark #grandparent, 
+body.dark #Parent {
+    background-color: #444;
+    border-color: #aaa;
+}
+
+#Child {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #ff4c4c;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+
+#taskForm {
+    background-color: #fff;
+    padding: 15px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+#tasktitle {
+    flex: 1; 
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+#category {
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+#taskForm button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#taskForm button:hover {
+    background-color: #0056b3;
+}
+
+
+.taskContainer > div {
+    background-color: #fff;
+    padding: 15px;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+}
+
+.taskContainer h1 {
+    font-size: 20px;
+    margin: 0 0 5px 0;
+    border: none; 
+    color: #0056b3;
+}
+
+.taskContainer p {
+    color: #666;
+    margin-bottom: 15px;
+}
+
+
+.taskContainer button {
+    padding: 8px 12px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.taskContainer button:first-of-type { background-color: #ff9800; } /* Edit Button */
+.taskContainer button:nth-of-type(2) { background-color: #4caf50; } /* Complete Button */
+.taskContainer button:nth-of-type(3) { background-color: #f44336; } /* Delete Button */
+
+
+@media (max-width: 600px) {
+    #taskForm {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-theme="light">
+    <h1>Event Propagation Demonstartion</h1>
+    <div id="grandparent">
+        Grandparent
+    
+    <div id="Parent">
+        Parent
+    
+    <button id="Child">
+        Child Button
+    </button>
+</div>
+</div>
+<h1>Task Manager</h1>
+    <button id="themeToggle">Dark Mode</button>
+    <form id="taskForm">
+
+        <input type="text" id="tasktitle" value="" placeholder="Enter task">
+
+        <select id="category">
+            <option value="Study">Study</option>
+            <option value="Work">Work</option>
+            <option value="Personal">Personal</option>
+        </select>
+        <button type="submit">Add Task</button>
+    </form>
+    <div class="taskContainer"></div>
+    <script src="script.js"></script>
+</body>
+</html>
