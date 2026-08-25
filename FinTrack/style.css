@@ -1,0 +1,121 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(221, 220, 220);
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+.login-container {
+    background: white;
+    width: 300px;
+    height: auto;
+    padding: 25px 18px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.login-container h1 {
+    padding-top: 0;
+    font-size: 20px;
+    
+    text-align: center;
+}
+
+.login-container p {
+    padding-top: 0;
+    margin-top: 10px;
+    font-size: 12px;
+    
+    text-align: center;
+}
+
+#login-username,
+#login-password {
+    display: block;
+    width: 100%;
+    height: 35px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#login-btn {
+    display: block;
+    width: 100%;
+    height: 35px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #28a745;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+
+.register-container{
+    background: white;
+    width: 300px;
+    height: auto;
+    padding: 25px 18px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.register-container h1{
+    
+    font-size: 20px;
+    text-align: center;
+}
+.register-container p{
+   
+    margin-top: 10px;
+    font-size: 12px;
+    text-align: center;
+}
+.register-input {
+  margin-top: 20px;
+}
+.register-input label{
+    display: block;
+    margin-bottom: 5px;
+    
+}
+.register-input input {
+    display: block;
+    width: 100%;
+    height: 35px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#register-btn {
+    display: block;
+    width: 100%;
+    height: 35px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #28a745;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.register-container a {
+    color: #0066cc;
+    text-decoration: none;
+}
