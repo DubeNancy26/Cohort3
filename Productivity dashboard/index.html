@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productivity Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="dashboard">
+        <header class="dashboard-header">
+            <div>
+                <p class="greeting">WELCOME BACK</p>
+                <h1>Productivity Dashboard</h1>
+                <p>Organize your day. stay focused.</p>
+            </div>
+            
+            <button id="theme-toggle">
+                Dark Mode
+            </button>
+        </header>
+
+        <section class="date-time-card">
+            <h2 id="current-date">Loading date...</h2>
+            <p id="current-time">Loading time...</p>
+        </section>
+
+        <section class="feature-grid">
+
+            <div class="feature-card" data-feature="todo">
+                <span class="feature-icon">📝</span>
+                <h2>Todo List</h2>
+                <p>Manage your daily tasks</p>
+            </div>
+
+            <div class="feature-card" data-feature="planner">
+                <span class="feature-icon">📅</span>
+                <h2>Daily Planner</h2>
+                <p>Plan your day</p>
+            </div>
+
+            <div class="feature-card" data-feature="pomodoro">
+                <span class="feature-icon">⏱️</span>
+                <h2>Pomodoro Timer</h2>
+                <p>Focus on your work</p>
+            </div>
+
+            <div class="feature-card" data-feature="quote">
+                <span class="feature-icon">💡</span>
+                <h2>Motivation</h2>
+                <p>Get inspired</p>
+            </div>
+
+            <div class="feature-card" data-feature="weather">
+                <span class="feature-icon">🌤️</span>
+                <h2>Weather</h2>
+                <p>Check the weather</p>
+            </div>
+
+            <div class="feature-card" data-feature="goals">
+                <span class="feature-icon">🎯</span>
+                <h2>Daily Goals</h2>
+                <p>Track your progress</p>
+            </div>
+
+        </section>
+
+        <section id="feature-view" class="feature-view hidden">
+            <button id="back-button">← Back to Dashboard</button>
+
+            <h2 id="feature-title"></h2>
+
+            <div id="feature-content">
+    <div id="todo-content">
+        <input type="text" id="task-input" placeholder="Enter your task">
+        <button type="button" id="add-task">Add Task</button>
+        <button id="clear-all">Clear All</button>
+
+        <p id="task-count">Total Tasks: 0</p>
+        <ul id="task-list"></ul>
+    </div>
+
+    <div id="planner-content" class="hidden">
+        <label for="planner-date">Select Date:</label>
+        <input type="date" id="planner-date">
+
+        <textarea id="planner-text" placeholder="Write your plan for the day"></textarea>
+        <button id="save-plan">Save Plan</button>
+
+        <p id="plan-message"></p>
+    </div>
+
+    <div id="pomodoro-content" class="hidden">
+    <h3 id="timer-display">25:00</h3>
+
+    <button id="start-timer">Start</button>
+    <button id="pause-timer">Pause</button>
+    <button id="reset-timer">Reset</button>
+</div>
+
+    <div id="quote-content" class="hidden">
+        <p>Motivation quotes will be added next.</p>
+    </div>
+
+    <div id="weather-content" class="hidden">
+    <h3>Weather</h3>
+
+    <input
+        type="text"
+        id="city-input"
+        placeholder="Enter city name"
+    >
+
+    <button id="check-weather">Check Weather</button>
+
+    <p id="weather-result"></p>
+</div>
+
+    <div id="goals-content" class="hidden">
+    <h3>Today's Goals</h3>
+
+    <input
+        type="text"
+        id="goal-input"
+        placeholder="Enter your daily goal"
+    >
+
+    <button id="add-goal">Add Goal</button>
+
+    <p id="goal-count">Completed Goals: 0</p>
+
+    <ul id="goal-list"></ul>
+</div>
+</div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
